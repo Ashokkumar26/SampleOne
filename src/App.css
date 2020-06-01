@@ -1,0 +1,35 @@
+@media only screen and (min-width: 768px) {
+.navbar-collapse {
+  position: absolute;
+  right: 0;
+}
+.cont{
+  width: 35%;
+}
+.conts{
+  width: 25%;
+}
+}
+table {
+  width: 50%;
+  counter-reset: row-num;
+}
+table tbody tr {
+  counter-increment: row-num;
+}
+table tbody tr td:first-child::before {
+    content: counter(row-num) " ";
+}
+.fix{
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+}
+.footer{
+  margin-top: 65px;
+}
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
